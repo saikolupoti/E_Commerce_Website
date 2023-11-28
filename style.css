@@ -1,0 +1,72 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('https://img.freepik.com/free-photo/arrangement-black-friday-shopping-carts-with-copy-space_23-2148667047.jpg?t=st=1701170379~exp=1701170979~hmac=052a2d150234ce09240c9266b243f23b0291a9c226a6863ab70c78ed99370ad8'); /* Replace with the actual path to your image */
+    background-size: cover; /* Ensure the background image covers the entire viewport */
+    background-position: center; /* Center the background image */
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #4a90e2;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+/* Product Card Styles */
+.card {
+    transition: transform 0.3s ease;
+}
+
+/* style.css */
+body.dark-mode {
+    background-color: #4a90e2;
+    color: #4a90e2;
+}
+
+
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 576px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-toggler {
+        margin-bottom: 10px;
+    }
+}
+
+

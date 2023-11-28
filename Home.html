@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic E-commerce</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-purple">
+        <a class="navbar-brand" href="index.html">Gadget Galaxy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <!-- Check if the user is logged in and show appropriate navigation -->
+                <li class="nav-item" id="loginNavItem">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item" id="logoutNavItem" style="display: none;">
+                    <a class="nav-link" href="logout.html" onclick="logout()">Logout</a>
+                </li>
+            </ul>
+            <!-- Dark mode toggle button -->
+            <div class="form-check form-switch">
+                <input style="color: rgb(0, 0, 0);" class="form-check-input" type="checkbox" id="darkModeToggle">
+                <label style="color: rgb(0, 0, 0);" class="form-check-label" for="darkModeToggle">Dark Mode</label>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-3">
+            <!-- Sidebar/Filter options go here -->
+            <h2>Filter Options</h2>
+            <!-- Add filter options based on your product categories -->
+        </div>
+        <div class="col-lg-9">
+            <!-- Product listing goes here -->
+            <div class="row">
+                <!-- Product Card Example -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://m.media-amazon.com/images/I/3150P3KQFlL._SY445_SX342_QL70_FMwebp_.jpg" class="card-img-top" alt="iPhone 13">
+                        <div class="card-body">
+                            <h5 class="card-title"><B>IPhone 13</B></h5>
+                            <p class="card-text">The iPhone 13,is a flagship smartphone by Apple. It boasts a 6.1-inch Super Retina XDR display, A15 Bionic chip, and advanced dual-camera system for improved low-light photography. With 5G support, sleek design, and features like MagSafe, it offers a powerful and integrated Apple experience..</p>
+                            <p class="card-text">$999.99</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat the above card structure for other products -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://s.yimg.com/uu/api/res/1.2/yLt5PKeHjZX3L_JytsgsoQ--~B/aD0xMzM0O3c9MjAwMDthcHBpZD15dGFjaHlvbg--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-11/c8aea820-28a0-11eb-9f89-5ddd62987703.cf.webp" class="card-img-top" alt="laptop">
+                        <div class="card-body">
+                            <h5 class="card-title"><B>Laptop</B></h5>
+                            <p class="card-text">
+                                The redesigned MacBook Air is incredibly portable at 1.24 kg, featuring the powerful M2 chip for fast performance and up to 18 hours of battery life. With a vivid 13.6-inch Liquid Retina display, advanced camera, and audio capabilities, it offers a seamless and user-friendly experience.This is a very Exccellent E-gadget.</p>
+                            <p class="card-text">$599.99</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2022/9/RW/SF/UT/3116103/new-apple-ipad-pro-12-9-inch-wi-fi-128gb-silver-4th-generation--500x500.jpg" class="card-img-top" alt="ipad">
+                        <div class="card-body">
+                            <h5 class="card-title"><B>Ipad</B></h5>
+                            <p class="card-text">Brilliant 11-inch Liquid Retina display with ProMotion, True Tone, and P3 wide color
+                                M2 chip with 8-core CPU and 10-core GPU
+                                12MP Wide camera, 10MP Ultra Wide back camera, and LiDAR Scanner for immersive AR
+                                12MP Ultra Wide front camera with Center Stage
+                                Stay connected with ultrafast Wi-Fi 6E
+                                </p>
+                            <p class="card-text">$499.99</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://media.istockphoto.com/id/496730484/photo/apple-watch-sport-42mm-silver-aluminum-case-with-white-band.jpg?s=612x612&w=0&k=20&c=RY2MGp4S-OVqAZm1ZCUDhM6KSmfAJ02RU51l4mJa2EA=" class="card-img-top" alt="Smartwatch">
+                        <div class="card-body">
+                            <h5 class="card-title"><B>Smartwatch</B></h5>
+                            <p class="card-text">Apple Watch can do what your other devices can't because it's on your wrist. When you wear it, you get a fitness partner that measures all the ways you move, meaningful health insights, innovative safety features and a connection to the people you care about most.</p>
+                            <p class="card-text">$199.99</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://www.apple.com/newsroom/images/product/imac/standard/Apple_imac-magickeyboardnum-magicmouse2-macos-wallpaper_08042020.jpg.news_app_ed.jpg" class="card-img-top" alt="PC Monitor">
+                        <div class="card-body">
+                            <h5 class="card-title"><B>PC Monitor</B></h5>
+                            <p class="card-text">The enclosures of both Studio Display and Pro Display XDR are made with low‑carbon aluminum, and the solder of the logic boards uses 100 percent recycled tin. Both displays are ENERGY STAR® certified 2 and free of numerous harmful substances, like mercury and PVC.                            </p>
+                            <p class="card-text">$199.99</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/og-airpods-max-202011?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1603996970000" class="card-img-top" alt="Headphones">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Headphones</b></h5>
+                            <p class="card-text">AirPods Max combine high-fidelity audio with industry-leading Active Noise Cancellation to deliver an unparalleled listening experience. Each part of their custom-built driver works to produce sound with ultra-low distortion across the audible range.</p>
+                            <p class="card-text">$399.99</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://m.media-amazon.com/images/I/61CzmGS8fbL._AC_UF894,1000_QL80_.jpg" class="card-img-top" alt="Mag Safe Power Bank">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Mag Safe Power Bank</b></h5>
+                            <p class="card-text">The perfectly aligned magnets keep it attached to your iPhone 12 and iPhone 12 Pro, iPhone 13 and iPhone 13 Pro, or iPhone 14 and 14 Pro — providing safe and reliable wireless charging. And it automatically charges, so there's no need to turn it on or off.</p>
+                            <p class="card-text">$99.99</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1629429408209-1f912961dbd8?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="gaming mouse">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>GamingMouse</b></h5>
+                            <p class="card-text">A gaming mouse is a mouse that's specifically designed for computer (PC ) gaming. These high performance mice are built to give you added speed and precision, as well as additional mappable buttons that you can use to your advantage in game.                            </p>
+                            <p class="card-text">$99.99</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/HPNG2?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1665002952548" class="card-img-top" alt="Joystick">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Joystick</b></h5>
+                            <p class="card-text">A joystick is a pointing and controlling device that is used to control the object on the screen and is widely used in controlling video games. It was successfully developed by the US Naval research board and patented for military use in the country.</p>
+                            <p class="card-text">$199.99</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Example for iPhone 14 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202209/iPhone_14_Pro_review_main_1_x.png?VersionId=ZDGSCZXwzCf2el2fyfQ.GvtPW_VbZoCG" class="card-img-top" alt="iPhone 14">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>IPhone 14 Pro Max</b></h5>
+                            <p class="card-text">The iPhone 14 Pro Max measures 160.70 x 77.60 x 7.85mm (height x width x thickness) and weighs 240.00 grams. It was launched in Space Black, Silver, Gold, and Deep Purple colours. It features an IP68 rating for dust and water protection. Connectivity options on the iPhone 14 Pro Max include Wi-Fi and Lightning.</p>
+                            <p class="card-text">$1099.99</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://www.apple.com/newsroom/images/2023/09/apple-unveils-iphone-15-pro-and-iphone-15-pro-max/tile/Apple-iPhone-15-Pro-lineup-hero-230912.jpg.og.jpg?202310312252" class="card-img-top" alt="iPhone 15">
+                        <div class="card-body">
+                            <h5 class="card-title">IPhone 15 Pro Max</h5>
+                            <p class="card-text">The iPhone 15 display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 6.12 inches diagonally.The bezels are also a bit thinner, which helps the iPhone 15 look more modern.</p>
+                            <p class="card-text">$1299.99</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://www.zdnet.com/a/img/resize/713757105549e1c4f3edc3071596cfe5d6b8bf68/2022/09/22/92cbda52-2e51-4e62-99b2-eca84b7e6d92/airpods-pro-2022.jpg?auto=webp&fit=crop&height=900&width=1200" class="card-img-top" alt="Airpods">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Airpods</b></h5>
+                            <p class="card-text">The H2-powered AirPods Pro now feature Adaptive Audio 1, automatically prioritising sounds that need your attention as you move through the world.With plenty of talk and listen time, voice-activated Siri access, and an available wireless charging case, AirPods deliver an incredible wireless headphone experience.</p>
+                            <p class="card-text">$199.99</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repeat the above card structure for other products -->
+
+                <!-- Add more product cards as needed -->
+
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="bg-dark text-white text-center p-3">
+    <p>&copy; 2023 Your E-commerce App. All rights reserved.</p>
+</footer>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<!-- Bootstrap JS and Popper.js (for Bootstrap features like modals) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Dark mode toggle script -->
+<script>
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+
+    darkModeToggle.addEventListener('change', () => {
+        body.classList.toggle('dark-mode', darkModeToggle.checked);
+    });
+
+    // Function to simulate logout
+    function logout() {
+        // Perform logout logic here (e.g., clear session, etc.)
+        // Redirect to Homee.html after logout
+        window.location.href = 'Homee.html';
+    }
+
+    // Check if the user is logged in (you need to implement this logic)
+
+
+    // Show/hide login and logout navigation based on login status
+    const loginNavItem = document.getElementById('loginNavItem');
+    const logoutNavItem = document.getElementById('logoutNavItem');
+
+    if (isLoggedIn) {
+        loginNavItem.style.display = 'none';
+        logoutNavItem.style.display = 'block';
+    } else {
+        loginNavItem.style.display = 'block';
+        logoutNavItem.style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
